@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {{ partial:components/common/seo }}
+        {{ vite src="resources/js/app.js" }}
+        {{ partial:components/typography/fonts }}
+    </head>
+    <body class="font-sans flex flex-col min-h-screen">
+        {{ partial:components/common/header }}
+
+        <div class="flex-grow">
+            {{ template_content }}
+        </div>
+
+        {{ partial:components/common/footer }}
+    </body>
+</html>

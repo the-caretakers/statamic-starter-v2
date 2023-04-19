@@ -1,0 +1,68 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: app
+        field:
+          display: App
+          type: section
+          icon: section
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: app_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Application Name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          placeholder: 'ACME Co.'
+      -
+        handle: contact_details
+        field:
+          display: 'Contact Details'
+          type: section
+          icon: section
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: phone
+        field:
+          input_type: tel
+          antlers: false
+          display: Phone
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          placeholder: '+64 9 123 4567'
+      -
+        handle: email
+        field:
+          input_type: email
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          placeholder: name@example.com
+      -
+        handle: address
+        field:
+          antlers: false
+          display: Address
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible

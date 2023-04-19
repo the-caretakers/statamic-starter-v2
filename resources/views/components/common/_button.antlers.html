@@ -1,0 +1,17 @@
+<{{ as or 'a' }}
+    class="inline-flex justify-center items-center gap-2 rounded bg-blue-500 text-center text-white px-4 py-2 {{ class }}"
+    {{ slot:attributes }}
+    {{ switch(
+        (link_type == 'entry') => 'href="{{ entry:url }}"',
+        (link_type == 'url') => 'href="{{ url }}"',
+        (link_type == 'email') => 'href="mailto:{{ email | obfuscate_email }}"',
+        (link_type == 'tel') => 'href="tel:{{ tel }}"',
+        (link_type == 'sms') => 'href="sms:{{ sms }}"',
+        (link_type == 'asset') => 'href="{{ asset }}" download',
+        () => 'href="{{ url }}"'
+    )}}
+    {{ target_blank ?= 'rel="noopener" target="_blank"' }}
+>
+        {{ content }}
+        {{ slot }}
+</{{ as or 'a' }}>

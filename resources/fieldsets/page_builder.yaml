@@ -1,0 +1,20 @@
+title: 'Page Builder'
+fields:
+  -
+    handle: page_builder
+    field:
+      collapse: false
+      previews: true
+      sets:
+        hero:
+          display: Hero
+          fields:
+            -
+              import: hero
+      display: 'Page Builder'
+      type: replicator
+      icon: replicator
+      listable: false
+      instructions_position: above
+      visibility: visible
+      instructions: 'Build your page by using various predefined content models.'

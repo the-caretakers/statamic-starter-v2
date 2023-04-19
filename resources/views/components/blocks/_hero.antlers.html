@@ -1,0 +1,12 @@
+<section class="flex flex-col items-start gap-6">
+    {{ partial:components/typography/h1
+        :content="title"
+        class=""
+    }}
+
+    {{ if subtitle }}
+        <p>{{ subtitle }}</p>
+    {{ /if }}
+
+    {{ partial:components/common/button content="Find Out More" }}
+</section>
