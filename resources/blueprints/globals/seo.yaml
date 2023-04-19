@@ -351,7 +351,7 @@ sections:
         handle: og_image
         field: common.image
         config:
-          container: social_images
+          container: assets
           localizable: true
           listable: hidden
           display: 'Social image'
@@ -362,7 +362,7 @@ sections:
         handle: twitter_image
         field: common.image
         config:
-          container: social_images
+          container: assets
           localizable: true
           listable: hidden
           display: 'Twitter image'
