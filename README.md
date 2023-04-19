@@ -1,7 +1,7 @@
 # Statamic Starter Kit
 A base starter for Statamic with my preferred config and boilerplate.
 
-## Installation
+## Using this starter kit
 Starting a new project (with the [Statamic CLI](https://github.com/statamic/cli)):
 ```
 statamic new my-app alexthekiwi/statamic-starter
@@ -12,8 +12,13 @@ Or install into an existing project:
 php please starter-kit:install alexthekiwi/statamic-starter
 ```
 
-## Development
-Compile front-end dependencies:
+## Getting started
+Install frontend dependencies:
+```
+npm install
+```
+
+Compile assets:
 ```
 npm run dev
 ```
