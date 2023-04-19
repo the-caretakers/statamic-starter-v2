@@ -1,6 +1,6 @@
 {
-    "name": "statamic/statamic",
-    "description": "Statamic",
+    "name": "alexthekiwi/statamic-starter",
+    "description": "Statamic starter kit",
     "keywords": [
         "statamic",
         "cms",
@@ -40,6 +40,10 @@
     "extra": {
         "laravel": {
             "dont-discover": []
+        },
+        "statamic": {
+            "name": "alexthekiwi/statamic-starter",
+            "description": "My starter kit"
         }
     },
     "autoload": {
