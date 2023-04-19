@@ -17,3 +17,9 @@ Compile front-end dependencies:
 ```
 npm run dev
 ```
+
+## Exporting
+To export this starter kit for use:
+```
+php please starter-kit:export .
+```
