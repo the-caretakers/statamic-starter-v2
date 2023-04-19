@@ -4,6 +4,7 @@ export_paths:
   - config/statamic/assets.php
   - config/statamic/editions.php
   - resources/blueprints
+  - resources/fieldsets
   - resources/css
   - resources/js
   - resources/views
