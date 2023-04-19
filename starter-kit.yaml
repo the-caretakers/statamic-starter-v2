@@ -16,4 +16,4 @@ export_paths:
   - tailwind.config.js
   - vite.config.js
   - postcss.config.js
-  - gitignore
+  - .gitignore
