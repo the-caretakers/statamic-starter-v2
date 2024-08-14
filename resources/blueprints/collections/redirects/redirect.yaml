@@ -60,7 +60,6 @@ tabs:
                 redirect_type: 'equals entry'
               collections:
                 - pages
-                - news
           -
             handle: external_url
             field:
