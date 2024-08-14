@@ -1,8 +1,7 @@
 <section class="flex flex-col items-start gap-6">
-    {{ partial:components/typography/h1
-        :content="title"
-        class=""
-    }}
+    <h1 class="text-5xl max-w-xl font-bold">
+        {{ title | nl2br | widont() }}
+    </h1>
 
     {{ if subtitle }}
         <p>{{ subtitle }}</p>

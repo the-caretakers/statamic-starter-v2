@@ -1,10 +1,17 @@
-{{# Redirect if current_url is in the Redirects global. #}}
-{{ redirects:redirects | where('url_old', {current_uri}) }}
-    {{ if internal_url }}
-        {{ redirect :to="internal_url:url" response="{response}" }}
-    {{ elseif external_url }}
-        {{ redirect :to="external_url" response="{response}" }}
+{{ collection from="redirects" query_scope="path_scope" :path="current_uri" }}
+    {{ if redirect_type == 'entry' && entry }}
+        {{ redirect :to="entry:permalink" response="{response_code}" }}
+    {{ elseif redirect_type == 'url' && external_url }}
+        {{ redirect :to="external_url" response="{response_code}" }}
     {{ /if }}
-{{ /redirects:redirects }}
+{{ /collection }}
 
-<p>404 Page not found.</p>
+{{ seo_title = 'Page Not Found' }}
+
+<section class="flex flex-col items-start gap-6">
+    <h1 class="text-5xl max-w-xl font-bold">
+        Page not found
+    </h1>
+    <p>Uh oh, you've hit a route that doesn't exist.</p>
+    {{ partial:components/common/button content="Go home" url="/" }}
+</section>

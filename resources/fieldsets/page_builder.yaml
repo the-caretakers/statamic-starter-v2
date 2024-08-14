@@ -11,6 +11,16 @@ fields:
           fields:
             -
               import: hero
+        rich_text:
+          display: 'Rich Text'
+          fields:
+            -
+              import: rich_text
+        form:
+          display: Form
+          fields:
+            -
+              import: form
       display: 'Page Builder'
       type: replicator
       icon: replicator

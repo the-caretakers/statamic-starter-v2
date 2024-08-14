@@ -7,7 +7,7 @@
         "production": "vite build"
     },
     "devDependencies": {
-        "@tailwindcss/forms": "^0.5.3",
+        "@tailwindcss/forms": "^0.5.7",
         "@tailwindcss/typography": "^0.5.9",
         "autoprefixer": "^10.4.0",
         "css-loader": "^5.2.7",
@@ -19,6 +19,7 @@
     },
     "dependencies": {
         "@alpinejs/collapse": "^3.12.0",
+        "@alpinejs/focus": "^3.14.1",
         "alpinejs": "^3.12.0"
     }
 }
