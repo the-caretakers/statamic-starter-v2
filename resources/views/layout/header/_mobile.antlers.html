@@ -36,9 +36,7 @@
                     @click="navigationMenuToggle()"
                     class="inline-flex items-center justify-center h-10 px-2 py-2 text-sm font-medium transition-colors rounded-outer focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
+                    {{ partial:svg/burger }}
                 </button>
             </div>
         </div>

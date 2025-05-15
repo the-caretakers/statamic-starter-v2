@@ -9,13 +9,18 @@ h2 {
 }
 
 h3 {
-    @apply text-3xl lg:text-5xl font-bold;
+    @apply text-lg font-bold;
 }
 
 .vertical-text {
     writing-mode: sideways-lr;
     text-orientation: mixed;
-    /*transform: rotate(-90deg);*/
-    /*white-space: nowrap;*/
-    /*text-shadow: 1px 1px 3px rgba(0,0,0,0.8); !* Makes text more readable on various backgrounds *!*/
+}
+
+summary::marker {
+    content: '';
+}
+
+details summary::-webkit-details-marker {
+    display: none;
 }

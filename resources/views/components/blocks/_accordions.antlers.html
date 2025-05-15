@@ -1,16 +1,28 @@
 {{ partial:components/block }}
     <div>
-        <div>
-            <h2>{{ title }}</h2>
-        </div>
+        {{ partial:components/common/title }}
         <div>
             {{ items }}
-                <details>
-                    <summary>{{ title }}</summary>
+                <details class="group">
+                    <summary class="border-b py-4">
+                        <div class="flex gap-8 items-center text-lg">
+                            <div class="flex items-center justify-center rounded-full bg-primary size-12 font-bold">
+                                {{ index + 1 }}
+                            </div>
 
-                    <div>
-                        <div>
-                            {{ content }}
+                            <h3>{{ title }}</h3>
+
+                            <div class="ml-auto">
+                                <div class="group-open:scale-y-[-1] transition-transform ease-in-out">
+                                    {{ partial:svg/chevron_up }}
+                                </div>
+                            </div>
+                        </div>
+                    </summary>
+
+                    <div class="pl-40 mt-8 pb-8 border-b">
+                        <div class="bard bg-white rounded-outer p-8">
+                            {{ bard }}
                         </div>
                     </div>
                 </details>

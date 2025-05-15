@@ -12,13 +12,9 @@
                     </div>
                 </div>
             {{ elseif type === "media" }}
-                <div class="w-full h-full overflow-hidden rounded-outer aspect-square">
-                    <img
-                        src="{{ glide :src="asset" preset="2xl-webp" }}"
-                        alt="{{ title }}"
-                        class="w-full h-full object-cover"
-                    />
-                </div>
+                {{ asset }}
+                    {{ partial:components/common/image }}
+                {{ /asset }}
             {{ /if }}
         {{ /items }}
     </div>

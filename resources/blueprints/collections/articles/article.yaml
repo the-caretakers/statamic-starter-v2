@@ -13,6 +13,13 @@ tabs:
               validate:
                 - required
           -
+            handle: thumbnail
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Thumbnail
+          -
             handle: author
             field:
               type: users
@@ -20,6 +27,11 @@ tabs:
               default: current
               localizable: true
               max_items: 1
+          -
+            handle: excerpt
+            field:
+              type: textarea
+              display: Excerpt
           -
             handle: bard
             field: common.bard

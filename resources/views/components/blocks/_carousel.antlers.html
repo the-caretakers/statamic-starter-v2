@@ -118,11 +118,9 @@
                         </div>
                     </div>
 
-                    <img
-                        x-show="activeIndex === {{ index }}"
-                        class="aspect-square w-full object-cover rounded-outer"
-                        src="{{ image }}"
-                    />
+                    <div x-show="activeIndex === {{ index }}">
+                        {{ partial:components/common/image :url="image" }}
+                    </div>
                 </div>
             {{ /items }}
         </div>

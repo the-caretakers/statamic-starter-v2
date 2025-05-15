@@ -1,0 +1,8 @@
+{{ if video | is_embeddable }}
+    <iframe class="w-full aspect-video" controls accesskey=""src="{{ video | embed_url }}"></iframe>
+{{ else }}
+    <video
+        controls
+        src="{{ video }}"
+    ></video>
+{{ /if }}
