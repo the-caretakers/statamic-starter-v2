@@ -23,7 +23,7 @@ input[type='password'],
 select,
 select[multiple],
 textarea {
-    @apply rounded-2xl border border-gray-700 px-5 py-4 transition-all focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-25;
+    @apply rounded-2xl border border-gray-700 px-5 py-4 transition-all focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500/25
 }
 
 label sup {

@@ -1,0 +1,39 @@
+{{ partial:components/block }}
+    <div class="flex flex-col gap-8 items-center">
+        {{ partial:components/text/subtitle }}
+            Testimonials
+        {{ /partial:components/text/subtitle }}
+
+        <h2 class="mb-16">{{ title }}</h2>
+
+        <div class="grid grid-cols-3 gap-6">
+            {{ testimonials }}
+                <div class="flex flex-col h-full">
+                    <div class="flex flex-col bg-gray-light gap-4 p-8 rounded-outer rounded-br-none flex-1">
+                        <svg class="mb-8" width="50" height="41" viewBox="0 0 50 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.776 40.6553V26.3193C27.776 19.9193 29.5253 14.33 33.024 9.55131C36.5227 4.6873 41.8987 1.70064 49.152 0.591309V9.9353C44.9707 10.4473 42.1973 11.8126 40.832 14.0313C39.4667 16.25 38.784 19.194 38.784 22.8633L31.232 21.3273H48.896V40.6553H27.776ZM0 40.6553V26.3193C0 19.9193 1.74933 14.33 5.248 9.55131C8.74667 4.6873 14.1227 1.70064 21.376 0.591309V9.9353C17.1947 10.4473 14.4213 11.8126 13.056 14.0313C11.6907 16.25 11.008 19.194 11.008 22.8633L3.456 21.3273H21.12V40.6553H0Z" fill="currentColor"/>
+                        </svg>
+
+                        <p class="font-bold">{{ title }}</p>
+
+                        {{ content }}
+                    </div>
+
+                    <div class="flex h-16">
+                        <div class="bg-gray-light flex-1 h-full">
+                            <div class="flex items-center rounded-tr-outer bg-white h-full px-8">
+                                {{ partial:components/text/subtitle }}
+                                    {{ author_name }}
+                                {{ /partial:components/text/subtitle }}
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-light h-full w-24 rounded-b-outer">
+
+                        </div>
+                    </div>
+                </div>
+            {{ /testimonials }}
+        </div>
+    </div>
+{{ /partial:components/block }}

@@ -1,0 +1,20 @@
+<header
+    class="w-full z-10 sticky top-0 bg-white"
+    x-data="{
+        navigationMenuOpen: false,
+        navigationMenuToggle() {
+            this.navigationMenuOpen = !this.navigationMenuOpen;
+        },
+        navigationMenuClose(){
+            this.navigationMenuOpen = false;
+        },
+    }"
+>
+    <div class="hidden xl:block w-full h-full">
+        {{ partial:layout/header/desktop }}
+    </div>
+
+    <div class="block xl:hidden w-full h-full">
+        {{ partial:layout/header/mobile }}
+    </div>
+</header>

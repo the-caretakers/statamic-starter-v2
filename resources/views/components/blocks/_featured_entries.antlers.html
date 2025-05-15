@@ -1,0 +1,33 @@
+{{ partial:components/block }}
+    {{ if title }}
+        <h2 class="text-center pb-24">{{ title }}</h2>
+    {{ /if }}
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 gap-y-12 lg:gap-16">
+        {{ entries }}
+            <div class="flex flex-col gap-8 lg:gap-12">
+                {{ image }}
+                    <img
+                        src="{{ glide
+                            :src="image"
+                            preset="2xl-webp"
+                            fit="crop_focal"
+                            width="600"
+                            height="600"
+                        }}"
+                        alt="{{ title }}"
+                        class="w-full h-auto rounded-outer aspect-square"
+                    >
+                {{ /image }}
+
+                <div class="flex flex-col gap-4">
+                    <strong class="max-w-[200px] text-balance">{{ title }}</strong>
+
+                    {{ partial:components/text/money }}
+                        {{ price }}
+                    {{ /partial:components/text/money }}
+                </div>
+            </div>
+        {{ /entries }}
+    </div>
+{{ /partial:components/block }}

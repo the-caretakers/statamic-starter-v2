@@ -1,17 +1,54 @@
-<{{ as or 'a' }}
-    class="inline-flex justify-center items-center gap-2 rounded bg-blue-500 text-center text-white px-4 py-2 {{ class }}"
-    {{ slot:attributes }}
-    {{ switch(
-        (link_type == 'entry') => 'href="{{ entry:url }}"',
-        (link_type == 'url') => 'href="{{ url }}"',
-        (link_type == 'email') => 'href="mailto:{{ email | obfuscate_email }}"',
-        (link_type == 'tel') => 'href="tel:{{ tel }}"',
-        (link_type == 'sms') => 'href="sms:{{ sms }}"',
-        (link_type == 'asset') => 'href="{{ asset }}" download',
-        () => 'href="{{ url }}"'
+{{ $button_href = button_link:permalink ?? button_link ?? link:permalink ?? link ?? url }}
+{{ $button_content = button_text ?? text ?? content ?? slot }}
+{{ $button_style = style ?? 'Outlined' }}
+{{ $button_colour = colour ?? 'white' }}
+
+{{ button_classes = 'inline-flex items-center gap-4  text-center  whitespace-nowrap transition-colors' }}
+
+{{ $size_classes = switch(
+    ($size == 'sm') => 'px-4 py-2 text-sm',
+    () => 'px-6 py-3 lg:px-10 lg:py-4 text-base lg:text-lg'
+)}}
+
+{{ style_classes = switch(
+    ($button_style == 'Outlined') => 'border bg-transparent',
+    ($button_style == 'Solid') => 'hover:brightness-110',
+    ($button_style == 'Underlined') => 'border-b border-black !px-0 w-full uppercase font-bold tracking-wider text-sm pb-5 justify-between'
+)}}
+
+{{ if $button_style == 'Outlined' }}
+    {{ colour_classes = switch(
+        ($button_colour == 'black') => 'text-black border-black',
+        ($button_colour == 'white') => 'text-white border-white hover:bg-white hover:text-black',
     )}}
-    {{ target_blank ?= 'rel="noopener" target="_blank"' }}
+{{ elseif $button_style == 'Solid' }}
+    {{ colour_classes = switch(
+        ($button_colour == 'black') => 'bg-black text-white',
+        ($button_colour == 'primary') => 'bg-primary text-black',
+        ($button_colour == 'gray') => 'bg-gray text-white',
+        ($button_colour == 'white') => 'bg-white text-black',
+    )}}
+{{ /if }}
+
+<{{ as or 'a' }}
+    class="group/button {{ button_classes }} {{ style_classes }} {{ colour_classes }} {{ size_classes }}"
+    {{ slot:attributes }}
+    {{ if !no_link }}
+        href="{{ $button_href }}"
+        {{ target_blank ?= 'rel="noopener" target="_blank"' }}
+    {{ else }}
+        type="button"
+    {{ /if }}
 >
-        {{ content }}
-        {{ slot }}
+    {{ if $button_style == 'Underlined' }}
+        {{  partial:components/text/subtitle }}
+            {{ $button_content }}
+        {{ /partial:components/text/subtitle }}
+
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.875 5.625L26.25 15M26.25 15L16.875 24.375M26.25 15H3.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    {{ else }}
+        {{ $button_content }}
+    {{ /if }}
 </{{ as or 'a' }}>

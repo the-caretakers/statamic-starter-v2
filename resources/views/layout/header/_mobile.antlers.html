@@ -1,0 +1,46 @@
+<div class="bg-white w-full z-10 relative">
+    <div class="container py-4">
+        <div class="flex justify-between">
+            <div
+                x-show="navigationMenuOpen"
+                @click.away="navigationMenuClose()"
+                class="absolute inset-x-0 top-24"
+                x-cloak
+            >
+                <div class="container">
+                    <div class="flex justify-center w-full h-auto overflow-hidden bg-white text-black rounded-outer">
+                        <div class="flex flex-col gap-12 items-stretch justify-center w-full p-8">
+                            <nav>
+                                <ul class="flex flex-col gap-5">
+                                    {{ nav:main }}
+                                        <li>
+                                            <a class="text-lg hover:underline font-medium hover:text-primary" href={{ url }}>
+                                                {{ title }}
+                                            </a>
+                                        </li>
+                                    {{ /nav:main }}
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="/">
+                {{ svg src="logo.svg" class="h-12" }}
+            </a>
+
+            <div class="flex items-center pl-2 text-black">
+                <button
+                    :class="{ 'bg-neutral-100' : navigationMenuOpen, 'hover:bg-neutral-100' : !navigationMenuOpen }"
+                    @click="navigationMenuToggle()"
+                    class="inline-flex items-center justify-center h-10 px-2 py-2 text-sm font-medium transition-colors rounded-outer focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

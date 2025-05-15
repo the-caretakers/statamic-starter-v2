@@ -1,0 +1,51 @@
+<div class="container mx-auto h-full">
+    <div class="flex flex-col gap-12 xl:gap-16 h-full text-heading py-20 xl:py-32">
+        <div class="flex flex-col gap-8 xl:gap-12 border-b border-heading pb-12 xl:pb-24">
+            {{ footer:subheading }}
+                {{ partial:components/common/subheading }}
+                    {{ text }}
+                {{ /partial:components/common/subheading }}
+            {{ /footer:subheading }}
+
+            <h1 class="font-cy hidden xl:block text-5xl leading-tight font-bold">{{ footer:text | nl2br }}</h1>
+            <h1 class="font-cy block xl:hidden text-3xl font-bold">{{ footer:text }}</h1>
+        </div>
+
+        <div class="flex flex-col xl:grid grid-cols-[150px_300px_1fr]  w-full h-full gap-12 xl:gap-32">
+            <div class="hidden xl:block h-full w-32">
+                {{ svg src="icon.svg" class="h-full w-44" }}
+            </div>
+
+            <div class="grid grid-cols-2 gap-y-6 gap-x-4 text-white my-auto">
+                {{ footer:links }}
+                    {{ if type == "spacer" }}
+                        <div class="hidden xl:block"></div>
+                    {{ else }}
+                        <a class="whitespace-nowrap" href="{{ link }}">{{ link_text }}</a>
+                    {{ /if }}
+                {{ /footer:links }}
+            </div>
+
+            <div class="flex flex-col gap-12 xl:ml-auto items-between h-full">
+                <div class="xl:ml-auto text-white">
+                    {{ footer:button }}
+                        {{ partial:components/common/button }}
+                    {{ /footer:button }}
+                </div>
+
+                <div class="flex mt-auto pb-12">
+                    <a class="flex gap-2 items-end text-white text-sm" href="http://www.intuitcreative.com" target="_blank">Lovingly crafted and built by Intuit Creative
+                        <svg class="fill-white" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.18 22.69" width="24" height="24">
+                            <defs></defs>
+                            <title>intuit-creative</title>
+                            <g id="Layer_1-2" data-name="Layer 1-2">
+                                <path class="cls-1" d="M10.57,7.4l2,2.06,2-2.06-2-2.18ZM1.64,6.62l11,11.64L23.53,6.62,18.72,1.39H16.18L13.55,4.21,16.1,7a.69.69,0,0,1,0,1l0,0-3,3a.7.7,0,0,1-.49.2h0a.7.7,0,0,1-.5-.2l-3-3a.68.68,0,0,1,0-1l0,0,2.55-2.74L9,1.38H6.49ZM12.6,20a.7.7,0,0,1-.51-.22L.19,7.09a.67.67,0,0,1,0-.93L5.68.22A.7.7,0,0,1,6.19,0H9.33a.68.68,0,0,1,.5.22l2.77,3,2.77-3a.68.68,0,0,1,.5-.22H19a.68.68,0,0,1,.52.23L25,6.16a.67.67,0,0,1,0,.93L13.1,19.73A.67.67,0,0,1,12.6,20Z" transform="translate(-0.01 0)"></path>
+                                <path class="cls-1" d="M15.19,22.69H10a.12.12,0,0,1-.12-.12h0V21.43a.13.13,0,0,1,.12-.11h5.2a.11.11,0,0,1,.12.1h0v1.14a.12.12,0,0,1-.12.12h0" transform="translate(-0.01 0)"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

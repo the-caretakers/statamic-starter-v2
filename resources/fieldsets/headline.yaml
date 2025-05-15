@@ -1,0 +1,9 @@
+title: Headline
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    import: block_settings

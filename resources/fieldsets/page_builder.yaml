@@ -3,28 +3,78 @@ fields:
   -
     handle: page_builder
     field:
-      collapse: false
-      previews: true
-      sets:
-        hero:
-          display: Hero
-          fields:
-            -
-              import: hero
-        rich_text:
-          display: 'Rich Text'
-          fields:
-            -
-              import: rich_text
-        form:
-          display: Form
-          fields:
-            -
-              import: form
       display: 'Page Builder'
       type: replicator
-      icon: replicator
       listable: false
-      instructions_position: above
-      visibility: visible
       instructions: 'Build your page by using various predefined content models.'
+      collapse: true
+      sets:
+        main:
+          display: Main
+          sets:
+            hero:
+              display: Hero
+              icon: favorite-star
+              fields:
+                -
+                  import: hero
+            intro:
+              display: Intro
+              icon: text-formatting-initial-letter
+              fields:
+                -
+                  import: intro
+            headline:
+              display: Headline
+              icon: text-formatting-all-caps
+              fields:
+                -
+                  import: headline
+            carousel:
+              display: Carousel
+              icon: layout-three-columns
+              fields:
+                -
+                  import: carousel
+            featured_entries:
+              display: 'Featured Entries'
+              icon: addon-boxes-stack
+              fields:
+                -
+                  import: featured_entries
+            content_block:
+              display: 'Content Block'
+              icon: text-formatting-wrap-image-left
+              fields:
+                -
+                  import: content_block
+            banner:
+              display: Banner
+              icon: media-image-photo-focus-frame
+              fields:
+                -
+                  import: banner
+            testimonials:
+              display: Testimonials
+              icon: favorite-award
+              fields:
+                -
+                  import: testimonials
+            accordions:
+              display: Accordions
+              icon: alert-help-question
+              fields:
+                -
+                  import: accordions
+            featured_articles:
+              display: 'Featured Articles'
+              icon: media-news-paper
+              fields:
+                -
+                  import: featured_articles
+            team:
+              display: Team
+              icon: user-multiple
+              fields:
+                -
+                  import: team_members

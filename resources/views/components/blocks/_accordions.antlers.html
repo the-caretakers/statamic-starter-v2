@@ -1,0 +1,20 @@
+{{ partial:components/block }}
+    <div>
+        <div>
+            <h2>{{ title }}</h2>
+        </div>
+        <div>
+            {{ items }}
+                <details>
+                    <summary>{{ title }}</summary>
+
+                    <div>
+                        <div>
+                            {{ content }}
+                        </div>
+                    </div>
+                </details>
+            {{ /items }}
+        </div>
+    </div>
+{{ /partial:components/block }}
