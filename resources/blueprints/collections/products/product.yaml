@@ -21,6 +21,12 @@ tabs:
               type: assets
               display: Image
           -
+            handle: supplementary_images
+            field:
+              container: assets
+              type: assets
+              display: 'Supplementary Images'
+          -
             handle: content
             field:
               type: markdown

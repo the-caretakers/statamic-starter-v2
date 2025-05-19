@@ -1,0 +1,60 @@
+<main id="content" class="flex flex-col min-h-screen">
+    {{ partial:layout/header/index }}
+
+    {{ partial:components/block padding_top="md" padding_bottom="base" }}
+        <div class="flex justify-between">
+            {{ partial:layout/breadcrumbs }}
+
+            {{ partial:components/common/button href="/products" colour="black" style="Solid" }}
+                View All Products
+            {{ /partial:components/common/button }}
+        </div>
+
+        <div class="grid grid-cols-2 gap-x-24 mt-12">
+            <div class="space-y-4">
+                {{ partial:alpine/carousel }}
+
+{{#                 <div class=""> #}}
+{{#                     {{ image }} #}}
+{{#                         {{ partial:components/common/image class="aspect-square bg-gray-50 rounded-outer" }} #}}
+{{#                     {{ /image }} #}}
+{{#                 </div> #}}
+{{#  #}}
+{{#                 {{ if (supplementary_images | length) > 0 }} #}}
+{{#                     <div class="grid grid-cols-3 gap-2"> #}}
+{{#                         {{ supplementary_images }} #}}
+{{#                             {{ partial:components/common/image class="w-full rounded-outer" }} #}}
+{{#                         {{ /supplementary_images }} #}}
+{{#                     </div> #}}
+{{#                 {{ /if }} #}}
+{{#  #}}
+{{#                 <div class="-mx-8"> #}}
+{{#                     {{ partial:alpine/carousel }} #}}
+{{#                 </div> #}}
+            </div>
+
+            <div class="flex flex-col gap-8">
+                <h2>{{ title }}</h2>
+
+                <div class="space-y-1">
+                    {{ partial:components/text/money class="text-xl font-bold" }}
+                        {{ price }}
+                    {{ /partial:components/text/money }}
+
+                    <p>Price Disclaimer Text</p>
+                </div>
+
+                <div class="space-y-1">
+                    <strong>Details</strong>
+
+                    <div class="bard text-base">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    {{ /partial:components/block }}
+
+    {{ partial:layout/footer/index }}
+</main>

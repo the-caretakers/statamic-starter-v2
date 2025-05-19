@@ -78,3 +78,15 @@ fields:
               fields:
                 -
                   import: team_members
+            articles_index:
+              display: 'Articles Index'
+              icon: setting-cog-gear
+              fields:
+                -
+                  import: articles_index
+            products_index:
+              display: 'Products Index'
+              icon: setting-cog-gear
+              fields:
+                -
+                  import: products_index

@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1
-updated_at: 1747277788
+updated_at: 1747612673
 page_builder:
   -
     id: makdwkj7
@@ -60,7 +60,7 @@ page_builder:
     id: maki6jh5
     title: 'Designed to adapt to you.'
     background_colour: primary
-    padding_top: none
+    padding_top: sm
     padding_bottom: base
     type: headline
     enabled: true
@@ -105,9 +105,9 @@ page_builder:
     id: maluslun
     title: 'Our best sellers'
     entries:
-      - e61ac6fc-9a9d-4f7b-9498-9adc4ee65fc3
-      - d3f9b384-5423-4fed-a882-a9d13e91a9a0
-      - 4520f49f-8b81-473b-bc6d-48a1a1012081
+      - 440a4220-2a70-4e4d-acd9-a273e78b9039
+      - ee042429-c470-4ec7-9232-c7951df86a0b
+      - 40f78bf9-0f49-445e-9c91-a3735ad98390
     background_colour: primary
     padding_top: base
     padding_bottom: base

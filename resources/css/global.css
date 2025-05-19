@@ -24,3 +24,31 @@ summary::marker {
 details summary::-webkit-details-marker {
     display: none;
 }
+
+.bard {
+    @apply flex flex-col gap-8;
+
+    h2 {
+        @apply pt-8;
+    }
+
+    strong {
+        @apply font-bold;
+    }
+
+    code {
+        @apply font-bold
+    }
+
+    code::before {
+        content: "`";
+    }
+
+    code::after {
+        content: "`";
+    }
+
+    img {
+        @apply rounded-outer shadow-lg;
+    }
+}

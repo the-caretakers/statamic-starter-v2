@@ -1,7 +1,7 @@
 ---
 id: 9af2f176-531d-4f3b-8ba8-e0bc904357ef
 blueprint: article
-title: 'Introducing — Dynamic Asset Folders!'
+title: 'Introducing Dynamic Asset Folders!'
 thumbnail: dynamic-asset-folders.jpg
 author: 1
 bard:
@@ -12,7 +12,9 @@ bard:
         type: text
         text: "With Statamic v5.27.0, we've introduced a new feature with photography, gallery, and portfolio sites in mind, but can help enhance the organization of your assets across the board, no matter the type of site."
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 2
     content:
       -
         type: text
@@ -30,7 +32,7 @@ bard:
         type: text
         marks:
           -
-            type: bold
+            type: code
         text: slug
       -
         type: text
@@ -39,7 +41,7 @@ bard:
         type: text
         marks:
           -
-            type: bold
+            type: code
         text: id
       -
         type: text
@@ -48,7 +50,7 @@ bard:
         type: text
         marks:
           -
-            type: bold
+            type: code
         text: author
       -
         type: text
@@ -57,8 +59,10 @@ bard:
     type: paragraph
     content:
       -
-        type: text
-        text: 'Did you know that Statamic means static + dynamic?'
+        type: image
+        attrs:
+          src: 'asset::assets::dynamic-folder-blueprint-builder.jpg'
+          alt: null
   -
     type: paragraph
     content:
@@ -69,7 +73,7 @@ bard:
         type: text
         marks:
           -
-            type: bold
+            type: code
         text: 'Kate and Johnny'
       -
         type: text
@@ -78,7 +82,7 @@ bard:
         type: text
         marks:
           -
-            type: bold
+            type: code
         text: kate-and-johnny
       -
         type: text
@@ -93,7 +97,7 @@ bard:
         type: text
         marks:
           -
-            type: bold
+            type: code
         text: /img/galleries/kate-and-johnny/
       -
         type: text
@@ -102,7 +106,7 @@ bard:
         type: text
         marks:
           -
-            type: bold
+            type: code
         text: IMG_7337.jpg
       -
         type: text
@@ -117,8 +121,10 @@ bard:
     type: paragraph
     content:
       -
-        type: text
-        text: 'Neatly organized folders. Automagically.'
+        type: image
+        attrs:
+          src: 'asset::assets::auto-generated-folder-structure.png'
+          alt: null
   -
     type: paragraph
     content:
@@ -150,12 +156,16 @@ bard:
               rel: null
               target: null
               title: null
+          -
+            type: underline
         text: 'the corresponding PR'
       -
         type: text
         text: .
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 3
     content:
       -
         type: text
@@ -170,7 +180,9 @@ bard:
         type: text
         text: "We are also tinkering with a brand new photography-centric Starter Kit that will utilize this feature. We think you're going to love it."
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 2
     content:
       -
         type: text
@@ -194,6 +206,8 @@ bard:
               rel: null
               target: null
               title: null
+          -
+            type: underline
         text: statamic/ideas
       -
         type: text
@@ -223,6 +237,8 @@ bard:
               rel: null
               target: null
               title: null
+          -
+            type: underline
         text: 'our community Discord'
       -
         type: text
@@ -237,12 +253,14 @@ bard:
               rel: null
               target: null
               title: null
+          -
+            type: underline
         text: 'subscribe to our newsletter'
       -
         type: text
         text: ' to get updates right into your inbox.'
 date: '2024-09-30'
 updated_by: 1
-updated_at: 1747283373
+updated_at: 1747359799
 excerpt: 'Having a content-heavy site with lots resources and assets? Our new dynamic asset folder creation to the rescue!'
 ---

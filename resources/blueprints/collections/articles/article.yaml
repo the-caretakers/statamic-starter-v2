@@ -36,7 +36,22 @@ tabs:
             handle: bard
             field: common.bard
             config:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - underline
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - superscript
+                - anchor
+                - image
+                - code
+                - codeblock
               display: Content
+              container: assets
   sidebar:
     display: Sidebar
     sections:

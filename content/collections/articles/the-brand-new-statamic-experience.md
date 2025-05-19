@@ -18,7 +18,9 @@ bard:
         type: text
         text: " After countless design iterations, a far-too-long-running git branch finally merged, and at least one designer threatening to move to an island in the Caribbean to spend his or her days drinking Hurricanes in the sun..., we've launched the new Statamic.com. Sure, it looks prettier and more sophisticated while keeping it's quirky roots, and yes the user experience is much more intuitive, but the real magic is in all the new features we've packed into every area of the site."
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 2
     content:
       -
         type: text
@@ -33,7 +35,9 @@ bard:
         type: text
         text: "You put the time in and now it's time to share your work with the world. Our new showcase section puts the spotlight on the impressive work our community creates. And for our Certified Partners, we've supercharged your profiles with proper project galleries. Time to let those screenshots and links do the talking."
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 2
     content:
       -
         type: text
@@ -48,7 +52,9 @@ bard:
         type: text
         text: "We've added a Community Links page because, let's face it, some of you explain Statamic better than we do. It's a curated collection of articles, tutorials, and videos from the community. Got something to share? Send it our way and we'll make sure the world sees it."
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 2
     content:
       -
         type: text
@@ -102,7 +108,9 @@ bard:
                 type: text
                 text: 'The Sites area shows you the nitty-gritty details about your installations – PHP, Laravel, and Statamic versions at a glance'
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 2
     content:
       -
         type: text
@@ -174,7 +182,9 @@ bard:
                 type: text
                 text: "Show some love with product likes – it's like Github stars, but you know, here on this site."
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 2
     content:
       -
         type: text
@@ -198,12 +208,16 @@ bard:
               rel: null
               target: null
               title: null
+          -
+            type: underline
         text: 'Enterprise Pricing'
       -
         type: text
         text: ' for when your Statamic needs get serious. Perfect for those times when someone in management asks "but can it scale?" or "Who can we call when we have an emergency?"'
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 2
     content:
       -
         type: text
@@ -225,6 +239,6 @@ bard:
         text: 'Take it for a spin and let us know what you think. After all, most of these improvements came from your feedback – turns out you all have pretty good ideas.'
 date: '2024-12-04'
 updated_by: 1
-updated_at: 1747283392
+updated_at: 1747359711
 excerpt: "After countless design iterations, a far-too-long-running git branch finally merged, and at least one designer threatening to move to an island in the Caribbean to spend his or her days drinking Hurricanes in the sun..., we've launched the new Statamic.com"
 ---
