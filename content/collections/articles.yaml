@@ -1,6 +1,8 @@
 title: Articles
 template: article
 layout: layout
+taxonomies:
+  - tags
 revisions: false
 route: '/articles/{{ slug }}'
 sort_dir: asc

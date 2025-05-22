@@ -6,32 +6,24 @@
 
         <h2 class="mb-16">{{ title }}</h2>
 
-        <div class="grid grid-cols-3 gap-6">
+        {{ partial:components/common/grid }}
             {{ testimonials }}
-                <div class="flex flex-col h-full">
-                    <div class="flex flex-col bg-gray-light gap-4 p-8 rounded-outer rounded-br-none flex-1">
+                {{ partial:components/common/title_card :subtitle="author_name" }}
+                    {{ slot:main }}
                         {{ partial:svg/quote }}
 
                         <h3>{{ title }}</h3>
 
                         {{ content }}
-                    </div>
+                    {{ /slot:main }}
 
-                    <div class="flex h-16">
-                        <div class="bg-gray-light flex-1 h-full">
-                            <div class="flex items-center rounded-tr-outer bg-white h-full px-8">
-                                {{ partial:components/text/subtitle }}
-                                    {{ author_name }}
-                                {{ /partial:components/text/subtitle }}
-                            </div>
-                        </div>
-
-                        <div class="bg-gray-light h-full w-24 rounded-b-outer">
-
-                        </div>
-                    </div>
-                </div>
+                    {{ slot:subtitle }}
+                        {{ partial:components/text/subtitle class="whitespace-nowrap" }}
+                            {{ author_name }}
+                        {{ /partial:components/text/subtitle }}
+                    {{ /slot:subtitle }}
+                {{ /partial:components/common/title_card }}
             {{ /testimonials }}
-        </div>
+        {{ /partial:components/common/grid }}
     </div>
 {{ /partial:components/block }}

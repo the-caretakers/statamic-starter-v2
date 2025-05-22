@@ -5,6 +5,8 @@ title: Shopify
 image: glalhsux7e4yprdjbc9hne3xfeypxt8vlwdfdwv5.jpeg
 price: 75.0
 updated_by: 1
-updated_at: 1747360731
+updated_at: 1747795665
+categories:
+  - ecommerce
 ---
 Integrate Shopify with Statamic

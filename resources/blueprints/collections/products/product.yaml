@@ -19,13 +19,13 @@ tabs:
               min_files: 1
               container: assets
               type: assets
-              display: Image
+              display: Thumbnail
           -
             handle: supplementary_images
             field:
               container: assets
               type: assets
-              display: 'Supplementary Images'
+              display: Images
           -
             handle: content
             field:

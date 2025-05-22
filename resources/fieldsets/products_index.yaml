@@ -1,2 +1,4 @@
 title: 'Products Index'
-fields: {  }
+fields:
+  -
+    import: block_settings

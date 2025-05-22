@@ -78,15 +78,36 @@ fields:
               fields:
                 -
                   import: team_members
-            articles_index:
-              display: 'Articles Index'
-              icon: setting-cog-gear
+            form:
+              display: Form
+              icon: form-text-field
               fields:
                 -
-                  import: articles_index
+                  import: form
+        advanced:
+          display: Advanced
+          sets:
             products_index:
               display: 'Products Index'
               icon: setting-cog-gear
               fields:
                 -
                   import: products_index
+            products_category_index:
+              display: 'Products Category Index'
+              icon: setting-cog-gear
+              fields:
+                -
+                  import: products_category_index
+            articles_index:
+              display: 'Articles Index'
+              icon: setting-cog-gear
+              fields:
+                -
+                  import: articles_index
+            html:
+              display: HTML
+              icon: programming-script-code-brackets
+              fields:
+                -
+                  import: html

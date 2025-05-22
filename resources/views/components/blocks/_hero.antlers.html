@@ -14,7 +14,7 @@
             </div>
         {{ /partial:components/common/background_image }}
     {{ else }}
-        <div class="bg-white">
+        <div class="{{ partial:components/settings/background_colour }} mb-12">
             <div class="flex flex-col gap-8 py-24 container">
                 <h1 class="text-center">
                     {{ title | nl2br | widont() }}
@@ -28,6 +28,10 @@
 
                 {{ partial:components/common/buttons }}
             </div>
+        </div>
+
+        <div class="container mx-auto mb-12">
+            {{ partial:layout/breadcrumbs }}
         </div>
     {{ /if }}
 </section>

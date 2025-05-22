@@ -73,63 +73,66 @@
         {{ /supplementary_images }}
     </div>
 
-    <div
-        x-on:keydown.right="next"
-        x-on:keydown.left="prev"
-        tabindex="0"
-        role="region"
-        aria-labelledby="carousel-label"
-        class="flex space-x-0 -mx-8"
-    >
-        <h2 id="carousel-label" class="sr-only" hidden>Carousel</h2>
-
-        <!-- Prev Button -->
-        <button
-            x-on:click="prev"
-            class="text-6xl"
-            :aria-disabled="atBeginning"
-            :tabindex="atEnd ? -1 : 0"
-            :class="{ 'opacity-50 cursor-not-allowed': atBeginning }"
-        >
-            <span aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-800">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                </svg>
-            </span>
-            <span class="sr-only">Skip to previous slide page</span>
-        </button>
-
-        <span id="carousel-content-label" class="sr-only" hidden>Carousel</span>
-
-        <ul
-            x-ref="slider"
+    {{ if (supplementary_images | length) > 0 }}
+        <div
+            x-on:keydown.right="next"
+            x-on:keydown.left="prev"
             tabindex="0"
-            role="listbox"
-            aria-labelledby="carousel-content-label"
-            class="flex w-full snap-x snap-mandatory overflow-x-hidden mt-2 mx-2 gap-2"
+            role="region"
+            aria-labelledby="carousel-label"
+            class="flex space-x-0 -mx-8"
         >
-            {{ supplementary_images }}
-                <li :class="{ '!border-secondary': active === {{ index }} }" x-bind="disableNextAndPreviousButtons" class="border border-gray-300 rounded-outer flex w-1/3 shrink-0 snap-start flex-col items-center justify-center" role="option">
-                    <button @click="handleClick({{ index }})" x-bind="focusableWhenVisible" class="rounded-outer w-full overflow-hidden aspect-video bg-gray-200">
-                        <img class="w-full h-full object-cover" src="{{ url }}" alt="placeholder image">
-                    </button>
-                </li>
-            {{ /supplementary_images }}
-        </ul>
+            <h2 id="carousel-label" class="sr-only" hidden>Carousel</h2>
 
-        <!-- Next Button -->
-        <button
-            x-on:click="next"
-            :aria-disabled="atEnd"
-            :tabindex="atEnd ? -1 : 0"
-            :class="{ 'opacity-50 cursor-not-allowed': atEnd }"
-        >
-            <span aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-800">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                </svg>
-            </span>
-            <span class="sr-only">Skip to next slide page</span>
-        </button>
-    </div>
+            <!-- Prev Button -->
+            <button
+                x-on:click="prev"
+                class="text-6xl"
+                :aria-disabled="atBeginning"
+                :tabindex="atEnd ? -1 : 0"
+                :class="{ 'opacity-50 cursor-not-allowed': atBeginning }"
+            >
+                <span aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-800">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </span>
+                <span class="sr-only">Skip to previous slide page</span>
+            </button>
+
+            <span id="carousel-content-label" class="sr-only" hidden>Carousel</span>
+
+            <ul
+                x-ref="slider"
+                tabindex="0"
+                role="listbox"
+                aria-labelledby="carousel-content-label"
+                class="flex w-full snap-x snap-mandatory overflow-x-hidden mt-2 mx-2 gap-2"
+            >
+                {{ supplementary_images }}
+                    <li :class="{ '!border-secondary': active === {{ index }} }" x-bind="disableNextAndPreviousButtons" class="border border-gray-300 rounded-outer flex w-[calc(33%-0.25rem)] shrink-0 snap-start flex-col items-center justify-center" role="option">
+                        <button @click="handleClick({{ index }})" x-bind="focusableWhenVisible" class="rounded-outer w-full overflow-hidden aspect-video bg-gray-200">
+                            <img class="w-full h-full object-cover" src="{{ url }}" alt="placeholder image">
+                        </button>
+                    </li>
+                {{ /supplementary_images }}
+            </ul>
+
+            <!-- Next Button -->
+            <button
+                x-on:click="next"
+                :aria-disabled="atEnd"
+                :tabindex="atEnd ? -1 : 0"
+                :class="{ 'opacity-50 cursor-not-allowed': atEnd }"
+            >
+                <span aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-800">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </span>
+                <span class="sr-only">Skip to next slide page</span>
+            </button>
+        </div>
+    {{ /if }}
+
 </div>

@@ -239,6 +239,8 @@ bard:
         text: 'Take it for a spin and let us know what you think. After all, most of these improvements came from your feedback – turns out you all have pretty good ideas.'
 date: '2024-12-04'
 updated_by: 1
-updated_at: 1747359711
+updated_at: 1747801285
 excerpt: "After countless design iterations, a far-too-long-running git branch finally merged, and at least one designer threatening to move to an island in the Caribbean to spend his or her days drinking Hurricanes in the sun..., we've launched the new Statamic.com"
+tags:
+  - update
 ---

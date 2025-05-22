@@ -1,11 +1,11 @@
-<section class="max-w-7xl w-full mx-auto flex flex-col gap-16 {{ partial:components/settings/padding }}">
-    {{ header }}
-        <div class="w-full mx-auto">
-            {{ partial:components/common/section_header }}
-        </div>
-    {{ /header }}
+{{ partial:components/block }}
+    <div class="flex flex-col gap-8">
+        {{ if title }}
+            {{ partial:components/common/title }}
+        {{ /if }}
 
-    <div class="max-w-3xl w-full mx-auto">
-        {{ partial:components/common/form :handle="form.handle" :button_text="button_text ?? 'Submit'" }}
+        <div class="max-w-2xl">
+            {{ partial:components/common/form :handle="form.handle" :button_text="button_text ?? 'Submit'" }}
+        </div>
     </div>
-</section>
+{{ /partial:components/block }}

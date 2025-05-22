@@ -92,7 +92,9 @@ bard:
         text: " –\_this is the beginning of an exciting new era for Statamic."
 date: '2025-02-13'
 updated_by: 1
-updated_at: 1747283403
+updated_at: 1747801269
 thumbnail: jay-george.jpg
 excerpt: 'Welcome Jay George — a talented designer, developer, long-time community member, and proud owner of two first names — to the Statamic Core Team!'
+tags:
+  - announcement
 ---

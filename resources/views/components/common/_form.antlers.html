@@ -17,9 +17,9 @@
                                 });
                             });
                         }
-                "
-                data-aos="fade-up"
-                data-aos-duration="900"
+                    "
+                    data-aos="fade-up"
+                    data-aos-duration="900"
                 >
                     {{ if success }}
                         <div class="bg-white text-green-500 font-bold text-center border border-green-500 p-4 rounded-outer">
@@ -100,27 +100,14 @@
                             {{ /sections }}
                         </div>
 
-                        <div class="flex items-start flex-wrap gap-6 justify-between mt-8 print:hidden">
-                            {{ if config:captcha:enabled }}
-                                <div class="flex gap-3 flex-col">
-                                    {{ captcha data-size="normal" data-appearance="interaction-only" }}
-
-                                    {{ if error:captcha }}
-                                        <span class="error">{{ error:captcha }}</span>
-                                    {{ /if }}
-                                </div>
-                            {{ else }}
-                                {{# Empty span to enforce button to be on right when captcha disabled #}}
-                                <span></span>
-                            {{ /if }}
-
-                            <div class="bg-gray-light p-4 flex gap-6 rounded-outer items-center">
+                        <div class="flex items-start w-full flex-wrap gap-6 justify-between mt-8 print:hidden">
+                            <div class="bg-gray-light p-4 flex gap-6 rounded-outer items-center w-full justify-between">
                                 <p class="text-xs">We do not share your information.</p>
                                 {{ partial:components/common/button
                                     type="submit"
-                                    as="button"v
-                                    content="{{ button_text ?? 'Submit' }}"
-                                    class="font-bold"
+                                    as="button"
+                                    colour="black"
+                                    style="Solid"
                                 }}
                             </div>
                         </div>

@@ -5,7 +5,7 @@ title: 'SEO Pro'
 image: qmrbvfsbyza4z3mmh2id3z0bw6jsa6ptjl2ev6mt.png
 price: 55.0
 updated_by: 1
-updated_at: 1747607080
+updated_at: 1747792473
 supplementary_images:
   - qmrbvfsbyza4z3mmh2id3z0bw6jsa6ptjl2ev6mt.png
   - lgds8qxf383hppz9rbhg169mf3b5f96qs6c3khck.jpeg
@@ -15,6 +15,8 @@ supplementary_images:
   - pmgxflb4lngfclf9qooqi6xydasdwbmzbtktxa3n.jpeg
   - rs0cw54fd76icvjgvlqc1eucn5q2aznypdfqg7qt.jpeg
   - r5zo6yjsonlmrn0xv4agyvnmp1hj15ikq633rrvt.jpeg
+categories:
+  - seo
 ---
 SEO Pro is an all-in-one site reporting, metadata wrangling, Open Graph managing, Twitter card making, sitemap generating, turnkey addon.
 

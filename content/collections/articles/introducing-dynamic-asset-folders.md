@@ -261,6 +261,8 @@ bard:
         text: ' to get updates right into your inbox.'
 date: '2024-09-30'
 updated_by: 1
-updated_at: 1747359799
+updated_at: 1747801264
 excerpt: 'Having a content-heavy site with lots resources and assets? Our new dynamic asset folder creation to the rescue!'
+tags:
+  - update
 ---
