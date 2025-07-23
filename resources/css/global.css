@@ -52,3 +52,7 @@ details summary::-webkit-details-marker {
         @apply rounded-outer shadow-lg;
     }
 }
+
+[x-cloak] {
+    display: none !important;
+}
