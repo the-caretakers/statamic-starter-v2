@@ -18,7 +18,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.7",
         "marcorieser/statamic-live-search": "^3.0",
-        "marcorieser/statamic-livewire": "^4.4",
+        "marcorieser/statamic-livewire": "^4.0",
         "pecotamic/sitemap": "^1.4",
         "spatie/laravel-schedule-monitor": "^3.8",
         "statamic/cms": "^5.0"
