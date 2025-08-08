@@ -17,11 +17,15 @@ h3 {
     text-orientation: mixed;
 }
 
-summary::marker {
-    content: '';
+summary {
+    list-style: none;
 }
 
-details summary::-webkit-details-marker {
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::marker {
     display: none;
 }
 
