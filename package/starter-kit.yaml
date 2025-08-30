@@ -1,11 +1,11 @@
 dependencies:
-  - aryehraber/statamic-captcha: ^1.12
-  - marcorieser/statamic-live-search: ^3.0
-  - marcorieser/statamic-livewire: ^4.0
-  - pecotamic/sitemap: ^1.4
-  - spatie/laravel-schedule-monitor: ^3.8
-  - laravel/horizon: ^5.27
-  - barryvdh/laravel-debugbar: ^3.6
+  - aryehraber/statamic-captcha
+  - marcorieser/statamic-live-search
+  - marcorieser/statamic-livewire
+  - pecotamic/sitemap
+  - spatie/laravel-schedule-monitor
+  - laravel/horizon
+  - barryvdh/laravel-debugbar
 
 export_paths:
   - content
