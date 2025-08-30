@@ -41,6 +41,11 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+          -
+            handle: hide_breadcrumbs
+            field:
+              type: toggle
+              display: 'Hide Breadcrumbs'
   seo:
     display: SEO
     sections:

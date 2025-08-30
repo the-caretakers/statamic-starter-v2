@@ -1,4 +1,4 @@
-<section>
+<section class="{{ if hide_breadcrumbs }} mb-12 {{ /if }}">
     {{ if background_type === 'Image' }}
         {{ partial:components/common/background_image
             :height="height"
@@ -57,9 +57,9 @@
                 {{ partial:components/common/buttons }}
             </div>
         </div>
+    {{ /if }}
 
-        <div class="container mx-auto mb-12">
-            {{ partial:layout/breadcrumbs }}
-        </div>
+    {{ if not hide_breadcrumbs }}
+        {{ partial:layout/breadcrumbs }}
     {{ /if }}
 </section>
