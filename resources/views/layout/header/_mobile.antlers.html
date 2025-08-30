@@ -1,11 +1,12 @@
-<div class="bg-white w-full z-10 relative">
+<div class="w-full z-10 relative">
     <div class="container py-4">
         <div class="flex justify-between">
             <div
                 x-show="navigationMenuOpen"
-                @click.away="navigationMenuClose()"
-                class="absolute inset-x-0 top-24"
+                x-transition.duration.200ms
+                x-on:click.away="navigationMenuClose()"
                 x-cloak
+                class="absolute inset-x-0 top-24"
             >
                 <div class="container">
                     <div class="flex justify-center w-full h-auto overflow-hidden bg-white text-black rounded-outer">
@@ -26,15 +27,17 @@
                 </div>
             </div>
 
-            <a href="/">
-                {{ svg src="logo.svg" class="h-12" }}
+            <a title="Home" href="/">
+                <img x-show="!isScrolled && !navigationMenuOpen" src="/logo-white.svg" class="h-12"/>
+                <img x-show="isScrolled || navigationMenuOpen" src="/logo.svg" class="h-12"/>
             </a>
 
-            <div class="flex items-center pl-2 text-black">
+            <div class="flex items-center pl-2">
                 <button
-                    :class="{ 'bg-neutral-100' : navigationMenuOpen, 'hover:bg-neutral-100' : !navigationMenuOpen }"
+                    title="Toggle menu"
+                    :class="{ 'hover:bg-current/50' : !navigationMenuOpen }"
                     @click="navigationMenuToggle()"
-                    class="inline-flex items-center justify-center h-10 px-2 py-2 text-sm font-medium transition-colors rounded-outer focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max"
+                    class="inline-flex items-center justify-center h-10 px-2 py-2 text-sm font-medium transition-colors rounded-outer focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background group w-max"
                 >
                     {{ partial:svg/burger }}
                 </button>

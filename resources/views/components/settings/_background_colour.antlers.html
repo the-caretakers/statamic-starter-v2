@@ -1,7 +1,8 @@
 {{ switch(
-    (background_colour == 'primary') => 'bg-primary-light',
-    (background_colour == 'secondary') => 'bg-secondary-light',
+    (background_colour == 'primary') => 'bg-primary text-white',
+    (background_colour == 'secondary') => 'bg-secondary',
     (background_colour == 'white') => 'bg-white',
-    (background_colour == 'gray') => 'bg-gray-50',
+    (background_colour == 'gray') => 'bg-gray text-white',
+    (background_colour == 'black') => 'bg-black text-white',
     () => 'bg-white',
 )}}

@@ -1,21 +1,41 @@
 <section>
     {{ if background_type === 'Image' }}
-        {{ partial:components/common/background_image }}
-            <div class="container flex flex-col gap-12 justify-center h-full text-white">
-                <h1 class="max-w-xl">
-                    {{ title | nl2br | widont() }}
-                </h1>
-
-                {{ if subtitle }}
-                    <p>{{ subtitle }}</p>
-                {{ /if }}
+        {{ partial:components/common/background_image
+            :height="height"
+            :show_overlay="show_overlay"
+            :overlay_opacity="overlay_opacity"
+            :overlay_colour="overlay_colour"
+            :is_hero="1"
+        }}
+            <div class="container flex flex-col gap-12 justify-center h-full text-white {{ switch(
+                (align == 'start') => 'items-start text-left',
+                (align == 'middle') => 'items-center text-center',
+                (align == 'end') => 'items-end text-right',
+                () => 'items-start',
+            ) }}">
+                <div class="flex flex-col gap-6">
+                    {{ if subtitle }}
+                        <p class="text-xl">{{ subtitle }}</p>
+                    {{ /if }}
+                    <h1 class="max-w-2xl">
+                        {{ title | nl2br | widont() }}
+                    </h1>
+                </div>
 
                 {{ partial:components/common/buttons colour="white" style="Solid" }}
             </div>
         {{ /partial:components/common/background_image }}
     {{ else }}
         <div class="{{ partial:components/settings/background_colour }} mb-12">
-            <div class="flex flex-col gap-8 py-24 container">
+            <div class="flex flex-col gap-8 py-24 container {{ switch(
+                (align == 'start') => 'items-start text-left',
+                (align == 'middle') => 'items-center text-center',
+                (align == 'end') => 'items-end text-right',
+                () => 'items-start',
+            ) }}">
+                {{# Spacer element for the sticky header with hero images #}}
+                <div class="block h-[20px] lg:h-[40px] w-full"></div>
+
                 <h1 class="text-center">
                     {{ title | nl2br | widont() }}
                 </h1>
