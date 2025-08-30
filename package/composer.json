@@ -1,0 +1,24 @@
+{
+    "name": "the-caretakers/statamic-starter-kit",
+    "extra": {
+        "statamic": {
+            "name": "Statamic Starter V2",
+            "description": "A description of your starter kit"
+        },
+        "laravel": {
+            "providers": [
+                "TheCaretakers\\StatamicStarterV2\\ServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "TheCaretakers\\StatamicStarterV2\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    }
+}

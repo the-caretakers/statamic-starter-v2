@@ -4,12 +4,12 @@ A base starter for Statamic with our preferred config and boilerplate.
 ## Using this starter kit
 Starting a new project (with the [Statamic CLI](https://github.com/statamic/cli)):
 ```
-statamic new my-app the-caretakers/statamic-starter-v2
+statamic new my-app the-caretakers/statamic-starter-kit
 ```
 
 Or install into an existing project:
 ```
-php please starter-kit:install the-caretakers/statamic-starter-v2
+php please starter-kit:install the-caretakers/statamic-starter-kit
 ```
 
 ## Getting started

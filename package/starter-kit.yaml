@@ -13,8 +13,15 @@ export_paths:
   - public/css
   - public/fonts
   - package.json
-  - tailwind.config.js
-  - vite.config.js
-  - postcss.config.js
+  - vite.config.mjs
   - .gitignore
   - app/Scopes
+  - README.md
+
+dependencies:
+  - aryehraber/statamic-captcha
+  - marcorieser/statamic-live-search
+  - marcorieser/statamic-livewire
+  - pecotamic/sitemap
+  - spatie/laravel-schedule-monitor
+  - laravel/horizon
