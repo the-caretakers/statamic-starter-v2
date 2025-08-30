@@ -17,3 +17,4 @@ export_paths:
   - vite.config.js
   - postcss.config.js
   - .gitignore
+  - app/Scopes
