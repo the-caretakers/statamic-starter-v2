@@ -1,3 +1,12 @@
+dependencies:
+  - aryehraber/statamic-captcha: ^1.12
+  - marcorieser/statamic-live-search: ^3.0
+  - marcorieser/statamic-livewire: ^4.0
+  - pecotamic/sitemap: ^1.4
+  - spatie/laravel-schedule-monitor: ^3.8
+  - laravel/horizon: ^5.27
+  - barryvdh/laravel-debugbar: ^3.6
+
 export_paths:
   - content
   - config/filesystems.php
@@ -16,12 +25,5 @@ export_paths:
   - vite.config.mjs
   - .gitignore
   - app/Scopes
-  - README.md
-
-dependencies:
-  - aryehraber/statamic-captcha
-  - marcorieser/statamic-live-search
-  - marcorieser/statamic-livewire
-  - pecotamic/sitemap
-  - spatie/laravel-schedule-monitor
-  - laravel/horizon
+export_as:
+  README.md: README.md
