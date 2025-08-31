@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1
-updated_at: 1747612673
+updated_at: 1756603625
 page_builder:
   -
     id: makdwkj7
@@ -30,11 +30,16 @@ page_builder:
         link: 'entry::201d1fb0-a9e7-4ef3-8bcc-8c00477d194b'
         type: button
         enabled: true
+    show_overlay: true
+    overlay_colour: black
+    overlay_opacity: 4
+    height: 4
+    align: start
   -
     id: makfsa7h
     title: 'Ready to take Statamic for a spin?'
     content: 'Keep your card in your wallet. Statamic Core is free forever, while you (and your team) can use Statamic Pro in development or staging for free for as long as you need.'
-    background_colour: primary
+    background_colour: primary-light
     padding_top: lg
     padding_bottom: md
     type: intro
@@ -56,14 +61,18 @@ page_builder:
         colour: black
         type: button_styled
         enabled: true
+    text_colour: default
   -
     id: maki6jh5
     title: 'Designed to adapt to you.'
-    background_colour: primary
+    background_colour: primary-light
     padding_top: sm
     padding_bottom: base
     type: headline
     enabled: true
+    heading: H1
+    alignment: Center
+    text_colour: default
   -
     id: makkkb1x
     background_colour: White
@@ -101,6 +110,7 @@ page_builder:
         type: item
         enabled: true
     style: 'All Showing'
+    text_colour: default
   -
     id: maluslun
     title: 'Our best sellers'
@@ -108,11 +118,12 @@ page_builder:
       - 440a4220-2a70-4e4d-acd9-a273e78b9039
       - ee042429-c470-4ec7-9232-c7951df86a0b
       - 40f78bf9-0f49-445e-9c91-a3735ad98390
-    background_colour: primary
+    background_colour: primary-light
     padding_top: base
     padding_bottom: base
     type: featured_entries
     enabled: true
+    text_colour: default
   -
     id: malx3ve0
     items:
@@ -143,10 +154,11 @@ page_builder:
     padding_bottom: base
     type: content_block
     enabled: true
+    text_colour: default
   -
     id: maly4bws
-    background_colour: White
-    padding_top: none
+    background_colour: secondary-light
+    padding_top: base
     padding_bottom: base
     type: carousel
     enabled: true
@@ -180,6 +192,7 @@ page_builder:
         type: item
         enabled: true
     style: 'Single Showing'
+    text_colour: default
   -
     id: malzdrw3
     image: 927-1920x1080.jpg
@@ -203,10 +216,11 @@ page_builder:
         type: button_styled
         enabled: true
     background_colour: White
-    padding_top: none
+    padding_top: base
     padding_bottom: none
     type: banner
     enabled: true
+    text_colour: default
   -
     id: maomhfq1
     title: 'What our happy customers say'
@@ -219,6 +233,7 @@ page_builder:
     padding_bottom: base
     type: testimonials
     enabled: true
+    text_colour: default
   -
     id: maomhzjm
     title: FAQ
@@ -259,11 +274,12 @@ page_builder:
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget egestas lacus. Nam egestas faucibus lacus, ac euismod ipsum placerat non. Ut viverra ac quam sed imperdiet. Ut nibh ex, cursus at tortor at, commodo tristique sapien. Sed iaculis est quis fermentum aliquam. Suspendisse venenatis sapien vehicula, egestas lectus id, placerat augue. Ut efficitur iaculis est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tincidunt diam ut nisi porttitor aliquet. Integer placerat eu sem sed faucibus. Vivamus tincidunt mauris ac interdum molestie. Duis facilisis sem non risus finibus posuere.'
         type: accordion
         enabled: true
-    background_colour: primary
+    background_colour: primary-light
     padding_top: base
     padding_bottom: base
     type: accordions
     enabled: true
+    text_colour: default
   -
     id: maomilg7
     title: 'Statamic News'
@@ -274,4 +290,6 @@ page_builder:
     padding_bottom: base
     type: featured_articles
     enabled: true
+    text_colour: default
+hide_breadcrumbs: true
 ---

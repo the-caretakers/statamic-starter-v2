@@ -1,4 +1,4 @@
-<section class="{{ if hide_breadcrumbs }} mb-12 {{ /if }}">
+<section>
     {{ if background_type === 'Image' }}
         {{ partial:components/common/background_image
             :height="height"
@@ -27,8 +27,10 @@
         {{ /partial:components/common/background_image }}
     {{ else }}
         <div class="mb-12 {{ switch(
-                (background_colour == 'primary') => 'bg-primary text-white',
-                (background_colour == 'secondary') => 'bg-secondary text-white',
+                (background_colour == 'primary') => 'bg-primary text-primary-contrast',
+                (background_colour == 'primary-light') => 'bg-primary-light',
+                (background_colour == 'secondary') => 'bg-secondary text-secondary-contrast',
+                (background_colour == 'secondary-light') => 'bg-secondary-light',
                 (background_colour == 'white') => 'bg-white',
                 (background_colour == 'gray') => 'bg-gray text-white',
                 (background_colour == 'black') => 'bg-black text-white',
