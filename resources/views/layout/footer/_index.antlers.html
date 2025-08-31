@@ -15,11 +15,26 @@
                                 <p class="font-bold border-b border-current pb-2">{{ title }}</p>
                             {{ /if }}
                             {{ if navigation }}
-                                {{ nav :handle="navigation.handle" }}
-                                    <a class="hover:underline" href="{{ url }}">
-                                        {{ nav_title ?? title }}
-                                    </a>
-                                {{ /nav }}
+                                <ul class="flex flex-col gap-6">
+                                    {{ nav :handle="navigation.handle" }}
+                                        <li class="flex flex-col gap-2">
+                                            <a class="hover:underline" href="{{ url }}">
+                                                {{ nav_title ?? title }}
+                                            </a>
+                                            {{ if children }}
+                                                <ul class="flex flex-col gap-3 border-current pl-4">
+                                                    {{ children }}
+                                                        <li>
+                                                            <a class="hover:underline" href="{{ url }}">
+                                                                {{ nav_title ?? title }}
+                                                            </a>
+                                                        </li>
+                                                    {{ /children }}
+                                                </ul>
+                                            {{ /if }}
+                                        </li>
+                                    {{ /nav }}
+                                </ul>
                             {{ /if }}
                         </div>
                     {{ /footer:blocks }}
