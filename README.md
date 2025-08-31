@@ -26,7 +26,7 @@ npm run dev
 ## Exporting
 To export this starter kit for use:
 ```
-php please starter-kit:export .
+php please starter-kit:export ./dist
 ```
 
 ---
