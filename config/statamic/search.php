@@ -27,27 +27,20 @@ return [
 
         'default' => [
             'driver' => 'local',
-            'searchables' => ['collection:pages', 'collection:articles', 'collection:products'],
-            'fields' => ['title', 'content', 'excerpt', 'tags', 'description', 'date', 'type', 'topic', 'role'],
-            'filter' => \App\SearchFilters\PublishedFilter::class,
-            'transformers' => [
-                'content' => \App\SearchFilters\Transform::class,
-            ],
+            'searchables' => 'all',
+            'fields' => ['title'],
         ],
 
         'articles' => [
             'driver' => 'local',
-            'searchables' => 'collection:articles',
-            'fields' => ['title', 'content', 'excerpt', 'tags', 'date', 'type', 'topic', 'role'],
-            'filter' => \App\SearchFilters\PublishedFilter::class,
+            'searchables' => ['collection:articles'],
+            'fields' => ['title', 'excerpt', 'bard'],
         ],
 
-        'products' => [
-            'driver' => 'local',
-            'searchables' => 'collection:products',
-            'fields' => ['title', 'content', 'excerpt', 'tags', 'date', 'type', 'topic', 'role'],
-            'filter' => \App\SearchFilters\PublishedFilter::class,
-        ],
+        // 'blog' => [
+        //     'driver' => 'local',
+        //     'searchables' => 'collection:blog',
+        // ],
 
     ],
 
