@@ -25,5 +25,7 @@ export_paths:
   - vite.config.mjs
   - .gitignore
   - app/Scopes
+  - app/Tags
+  - app/SearchFilters
 export_as:
   README.md: README.md
