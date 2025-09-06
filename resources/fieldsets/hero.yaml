@@ -1,17 +1,17 @@
 title: Hero
 fields:
   -
+    handle: subtitle
+    field:
+      type: text
+      display: Subtitle
+  -
     handle: title
     field:
       type: textarea
       display: Title
       validate:
         - required
-  -
-    handle: subtitle
-    field:
-      type: text
-      display: Subtitle
   -
     handle: background_type
     field:
@@ -106,6 +106,7 @@ fields:
       width: 33
       if:
         show_overlay: 'equals true'
+        background_type: 'equals Image'
   -
     handle: overlay_opacity
     field:
@@ -116,6 +117,7 @@ fields:
       width: 33
       if:
         show_overlay: 'equals true'
+        background_type: 'equals Image'
   -
     handle: height
     field:
@@ -125,6 +127,8 @@ fields:
       type: range
       display: Height
       width: 50
+      if:
+        background_type: 'equals Image'
   -
     handle: align
     field:
