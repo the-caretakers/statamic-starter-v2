@@ -121,7 +121,7 @@ fields:
     field:
       min: 1
       max: 5
-      default: 1
+      default: 3
       type: range
       display: Height
       width: 50
