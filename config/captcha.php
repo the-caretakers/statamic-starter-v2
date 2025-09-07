@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'service' => env('CAPTCHA_SERVICE', 'Turnstile'), // options: Recaptcha / Hcaptcha / Turnstile
+    'service' => env('CAPTCHA_SERVICE', 'Recaptcha'), // options: Recaptcha / Hcaptcha / Turnstile
     'enabled' => env('CAPTCHA_ENABLED', false),
     'sitekey' => env('CAPTCHA_SITEKEY', ''),
     'secret' => env('CAPTCHA_SECRET', ''),
@@ -10,7 +10,7 @@ return [
     'user_login' => false,
     'user_registration' => false,
     'disclaimer' => '',
-    'invisible' => false,
+    'invisible' => true,
     'hide_badge' => false,
     'enable_api_routes' => false,
 ];

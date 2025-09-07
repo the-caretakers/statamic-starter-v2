@@ -13,6 +13,9 @@ export_paths:
   - config/statamic/assets.php
   - config/statamic/editions.php
   - config/statamic/cp.php
+  - config/statamic/static_caching.php
+  - config/statamic/search.php
+  - config/captcha.php
   - resources/blueprints
   - resources/fieldsets
   - resources/forms
@@ -29,4 +32,4 @@ export_paths:
   - app/Scopes
   - app/Tags
   - app/SearchFilters
-  - config/statamic/search.php
+  - database/migrations/2025_09_07_151028_create_schedule_monitor_tables.php
