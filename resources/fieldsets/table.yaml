@@ -24,6 +24,12 @@ fields:
       display: 'First row is headers?'
       width: 33
   -
+    handle: bold_first_column
+    field:
+      type: toggle
+      display: 'Bold first column?'
+      width: 33
+  -
     handle: content
     field: common.bard
     config:

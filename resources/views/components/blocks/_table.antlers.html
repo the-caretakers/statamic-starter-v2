@@ -26,7 +26,7 @@
                         {{ /if }}
                             <tr class="odd:bg-gray-50">
                             {{ cells }}
-                                <td class="p-3">{{ value|markdown }}</td>
+                                <td class="p-3{{ if bold_first_column && first }} font-bold{{ /if }}">{{ value|markdown }}</td>
                             {{ /cells }}
                             </tr>
                         {{ if last }}
