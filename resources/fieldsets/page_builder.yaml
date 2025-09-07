@@ -135,3 +135,9 @@ fields:
               fields:
                 -
                   import: gallery
+            resources:
+              display: Resources
+              icon: file-content-list
+              fields:
+                -
+                  import: resources
