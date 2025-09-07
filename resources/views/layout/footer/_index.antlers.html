@@ -6,7 +6,7 @@
                     {{ partial:svg/logo class="h-10 text-current" }}
                 </a>
 
-                <div class="flex flex-row justify-between w-full gap-y-8 gap-x-8">
+                <div class="text-sm flex flex-row justify-between w-full gap-y-8 gap-x-8">
                     {{ footer:blocks }}
                         <div class="flex-grow flex flex-col gap-6">
                             {{ if title_link }}
@@ -41,7 +41,7 @@
                 </div>
             </div>
 
-            <div class="flex justify-between pt-8 pb-24">
+            <div class="flex justify-between pt-8 pb-24 text-xs">
                 <div class="flex items-center flex-wrap gap-6">
                     <p>© {{ config:app:name }} {{ date | format('Y') }}</p>
                     <a class="hover:underline" href="/site-map">Sitemap</a>
