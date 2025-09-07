@@ -29,5 +29,3 @@ export_paths:
   - app/Tags
   - app/SearchFilters
   - config/statamic/search.php
-export_as:
-  README.md: README.md
