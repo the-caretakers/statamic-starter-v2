@@ -1,0 +1,9 @@
+{{ partial:components/block }}
+    <div class="flex flex-col gap-8 lg:max-w-4xl lg:mx-auto">
+        {{ if content && ! (content | is_empty) }}
+            <div class="prose max-w-full">
+                {{ content }}
+            </div>
+        {{ /if }}
+    </div>
+{{ /partial:components/block }}
