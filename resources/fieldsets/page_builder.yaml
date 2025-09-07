@@ -123,3 +123,9 @@ fields:
               fields:
                 -
                   import: table
+            gallery:
+              display: Gallery
+              icon: media-image-picture-gallery
+              fields:
+                -
+                  import: gallery
