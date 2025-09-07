@@ -1,14 +1,14 @@
 {{ partial:components/block }}
-    <div class="flex flex-col gap-8 lg:max-w-4xl lg:mx-auto">
+    <div class="flex flex-col gap-8 w-full lg:max-w-4xl lg:mx-auto">
         {{ if description && ! (description | is_empty) }}
             <div class="prose max-w-full">
                 {{ description }}
             </div>
         {{ /if }}
 
-        <div class="overflow-x-auto rounded-md border border-gray-200">
-            <div class="prose max-w-full prose-p:m-0">
-                <table>
+        <div class="overflow-x-auto w-full rounded-md border border-gray-200">
+            <div class="prose w-full max-w-full prose-p:m-0">
+                <table class="w-full">
                     {{ table }}
                         {{ if first && header_row }}
                             <thead>
