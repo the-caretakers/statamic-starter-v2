@@ -111,3 +111,9 @@ fields:
               fields:
                 -
                   import: html
+            fixed_block:
+              display: 'Fixed Block'
+              icon: dashboard-layout-2
+              fields:
+                -
+                  import: fixed_block
