@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1
-updated_at: 1747869698
+updated_at: 1757205168
 page_builder:
   -
     id: mayjquz6
@@ -18,6 +18,9 @@ page_builder:
     background_colour: primary
     type: hero
     enabled: true
+    align: start
+    overlay_opacity: 0
+    height: 0
   -
     id: mayjrj8t
     title: 'Get in Touch'
@@ -27,5 +30,12 @@ page_builder:
     type: form
     enabled: true
     form: contact
-parent: dbd70a65-fb0a-48e6-aaaa-abc8e0054e11
+    block_title: "We'd love to hear from you."
+    show_block_title_options: true
+    block_title_tag: h2
+    block_title_colour: default
+    block_title_center: true
+    block_title_keyline: true
+    text_colour: default
+hide_breadcrumbs: false
 ---

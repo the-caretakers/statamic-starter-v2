@@ -1,6 +1,8 @@
 title: Accordions
 fields:
   -
+    import: block_title
+  -
     handle: title
     field:
       type: text

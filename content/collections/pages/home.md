@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1
-updated_at: 1756603625
+updated_at: 1757205111
 page_builder:
   -
     id: makdwkj7
@@ -111,6 +111,11 @@ page_builder:
         enabled: true
     style: 'All Showing'
     text_colour: default
+    show_block_title_options: false
+    block_title_tag: h2
+    block_title_colour: primary
+    block_title_center: true
+    block_title_keyline: true
   -
     id: maluslun
     title: 'Our best sellers'
@@ -193,6 +198,11 @@ page_builder:
         enabled: true
     style: 'Single Showing'
     text_colour: default
+    show_block_title_options: false
+    block_title_tag: h2
+    block_title_colour: primary
+    block_title_center: true
+    block_title_keyline: true
   -
     id: malzdrw3
     image: 927-1920x1080.jpg
@@ -280,6 +290,11 @@ page_builder:
     type: accordions
     enabled: true
     text_colour: default
+    show_block_title_options: false
+    block_title_tag: h2
+    block_title_colour: primary
+    block_title_center: true
+    block_title_keyline: true
   -
     id: maomilg7
     title: 'Statamic News'
@@ -291,5 +306,11 @@ page_builder:
     type: featured_articles
     enabled: true
     text_colour: default
+    block_title: 'Latest news'
+    show_block_title_options: false
+    block_title_tag: h2
+    block_title_colour: primary
+    block_title_center: true
+    block_title_keyline: true
 hide_breadcrumbs: true
 ---

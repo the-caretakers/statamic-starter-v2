@@ -12,6 +12,22 @@ h3 {
     @apply text-lg font-bold;
 }
 
+.prose {
+    h2 {
+        @apply text-primary;
+    }
+
+    h3,
+    p,
+    strong {
+        @apply text-gray;
+    }
+
+    h3 {
+        @apply mb-0;
+    }
+}
+
 .vertical-text {
     writing-mode: sideways-lr;
     text-orientation: mixed;
