@@ -1,5 +1,8 @@
 <section class="{{ {partial:components/settings/padding} | trim }} {{ {partial:components/settings/background_colour} | trim }} {{ {partial:components/settings/text_colour} | trim }}">
-    <div {{ if !no_container }} class="container" {{ /if }}>
+    <div {{ if !no_container }} class="flex flex-col gap-12 lg:gap-16 container" {{ /if }}>
+        {{ if block_title }}
+            {{ partial:components/block_title }}
+        {{ /if }}
         {{ slot }}
     </div>
 </section>

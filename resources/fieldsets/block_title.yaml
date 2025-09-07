@@ -1,0 +1,75 @@
+title: 'Block Title'
+fields:
+  -
+    handle: block_title_section
+    field:
+      type: section
+      display: 'Block Title'
+  -
+    handle: block_title
+    field:
+      type: textarea
+      display: Title
+      width: 75
+  -
+    handle: show_block_title_options
+    field:
+      type: toggle
+      display: 'Show Options'
+      width: 25
+  -
+    handle: block_title_tag
+    field:
+      options:
+        -
+          key: h1
+          value: H1
+        -
+          key: h2
+          value: H2
+        -
+          key: h3
+          value: H3
+        -
+          key: p
+          value: P
+      clearable: true
+      default: h2
+      type: select
+      display: 'Title Tag'
+      width: 25
+      if:
+        show_block_title_options: 'equals true'
+      always_save: true
+  -
+    handle: block_title_colour
+    field: block_settings.text_colour
+    config:
+      default: primary
+      display: 'Title Colour'
+      width: 25
+      always_save: true
+      if:
+        show_block_title_options: 'equals true'
+  -
+    handle: block_title_center
+    field:
+      type: toggle
+      display: 'Title Center'
+      width: 25
+      default: true
+      always_save: true
+      if:
+        show_block_title_options: 'equals true'
+  -
+    handle: block_title_keyline
+    field:
+      type: toggle
+      display: Keyline
+      width: 25
+      if:
+        show_block_title_options: 'equals true'
+      always_save: true
+      default: true
+  -
+    import: buttons

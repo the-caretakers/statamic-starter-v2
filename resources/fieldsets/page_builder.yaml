@@ -117,3 +117,9 @@ fields:
               fields:
                 -
                   import: fixed_block
+            table:
+              display: Table
+              icon: layout-table-row-insert
+              fields:
+                -
+                  import: table
