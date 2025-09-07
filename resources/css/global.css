@@ -1,5 +1,10 @@
 /* Global Styles */
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
 h1 {
     @apply text-5xl md:text-6xl xl:text-7xl font-bold;
 }
