@@ -3,9 +3,14 @@ fields:
   -
     import: block_title
   -
-    handle: description
+    handle: table_section
     field:
-      type: textarea
+      type: section
+      display: Table
+  -
+    handle: description
+    field: common.bard
+    config:
       display: Description
   -
     handle: table
@@ -15,7 +20,6 @@ fields:
   -
     handle: header_row
     field:
-      default: true
       type: toggle
       display: 'First row is headers?'
       width: 33
