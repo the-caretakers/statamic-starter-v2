@@ -33,3 +33,4 @@ export_paths:
   - app/Tags
   - app/SearchFilters
   - database/migrations/2025_09_07_151028_create_schedule_monitor_tables.php
+  - deploy.sh
