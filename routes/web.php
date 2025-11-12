@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 use Statamic\Exceptions\NotFoundHttpException;
 
@@ -7,6 +8,8 @@ use Statamic\Exceptions\NotFoundHttpException;
 if (config('statamic.cp.route') !== 'cp') {
     Route::get('/cp', fn () => to_route('statamic.cp.dashboard'));
 }
+
+Route::get('/search', [SearchController::class, 'index'])->name('search.index');
 
 // Custom taxonomy routes
 
@@ -27,5 +30,3 @@ $map = [
 //    $routeWithTaxonomy = implode('/', array($route['collection_handle'], $route['uri_slug'], '{slug}'));
 //    Route::statamic($routeWithTaxonomy, "products.$route[uri_slug].show");
 //}
-
-

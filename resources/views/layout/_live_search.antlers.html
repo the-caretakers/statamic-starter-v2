@@ -8,6 +8,7 @@
         wire:model.live.debounce.300ms="q"
         name="q"
         @focus="showResults = true"
+        x-on:keydown.enter="window.location.href = '/search?q=' + $refs.search.value"
     />
     <div x-cloak x-show="showResults && $wire.q && $wire.q.length > 0" class="bg-white flex flex-col gap-2 w-full z-10 overflow-y-auto">
         {{ results }}
