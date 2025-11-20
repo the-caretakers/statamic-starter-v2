@@ -81,3 +81,7 @@ summary::marker {
 [x-cloak] {
     display: none !important;
 }
+
+.aspect-portrait {
+    @apply aspect-3/4;
+}
